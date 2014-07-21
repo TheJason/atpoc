@@ -1,5 +1,7 @@
 // Angular App JS
-var app = angular.module('atpoc', []);
+var app = angular.module('atpoc', []).config(function($sceProvider) {
+  $sceProvider.enabled(false);
+});
 
 app.factory('Book',function($http){
   
