@@ -63,11 +63,6 @@ app.controller('MainCtrl', function($scope,Book) {
   //$scope.name = 'World';
   Book.getBook().then(function(book){
   $scope.book = book;
-  function getHTML(val){
-    
-      return $sce.trustAsHtml(val);
-    })
-  }
   //$scope.leftContent= $sce.trustAsHtml(book.currentPage.cola);
   //$scope.rightContent= $sce.trustAsHtml(book.currentPage.colb);
   })
