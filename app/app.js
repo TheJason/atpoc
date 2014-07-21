@@ -1,7 +1,7 @@
 // Angular App JS
 var app = angular.module('atpoc', []);
 
-app.factory('Book',function($http,$sce){
+app.factory('Book',function($http){
   
   function Page(data){
     this.pageNum = data.pageNum;
@@ -11,8 +11,8 @@ app.factory('Book',function($http,$sce){
     this.parentID = data.parentID;
     this.jobNum = data.jobNum;
     this.jobNumDot = data.jobNumDot;
-    this.cola = $sce.trustAsHtml(data.cola);
-    this.colb = $sce.trustAsHtml(data.colb);
+    this.cola = data.cola;
+    this.colb = data.colb;
     this.colc = data.colc;
     this.cold = data.cold;
     this.cole = data.cole;
