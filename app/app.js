@@ -59,7 +59,7 @@ app.factory('Book',function($http){
 })
 
 
-app.controller('MainCtrl', function($scope,Book) {
+app.controller('MainCtrl', function($scope,Book,$sce) {
   //$scope.name = 'World';
   Book.getBook().then(function(book){
   $scope.book = book; 
