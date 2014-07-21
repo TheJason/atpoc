@@ -1,6 +1,6 @@
 @Point Of Care's Angular Web App
 =====
-This version is a simplified version of our current web book, designed to be minimal code, with optimal performance.
+This version is a simplified version of our current web book, designed with minimal code, for optimized performance.
   
 We will also be able to easily wrap this as an iOS, Android, Windows, and Kindle version with minimal modifications.
   
