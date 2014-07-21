@@ -1,8 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="plunker">
+
   <head>
-    <title>@Point of Care
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <!--<link rel="stylesheet" href="style.css" />-->
+    <script data-require="angular.js@1.2.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" data-semver="1.2.19"></script>
+    <script src="app/app.js"></script>
   </head>
-  <body>
-    <h1>Hola</h1>
+
+  <body ng-controller="MainCtrl">
+    <select ng-options="page as page.pageNum for page in book.page" ng-model="book.currentPage"></select>
+    <h2>{{book.currentPage.page_title}}</h2>
+    <div style="width:48%; float:left">{{book.currentPage.cola}}</div>
+    <div style="width:48%; float:right">{{book.currentPage.colb}}</div>
   </body>
 </html>
