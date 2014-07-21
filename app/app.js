@@ -59,11 +59,11 @@ app.factory('Book',function($http){
 })
 
 
-app.controller('MainCtrl', function($scope,Book,$sce) {
+app.controller('MainCtrl', function($scope,Book) {
   //$scope.name = 'World';
   Book.getBook().then(function(book){
   $scope.book = book; 
-  $scope.leftContent= $sce.trustAsHtml(book.currentPage.cola);
-  $scope.rightContent= $sce.trustAsHtml(book.currentPage.colb);
+  //$scope.leftContent= $sce.trustAsHtml(book.currentPage.cola);
+  //$scope.rightContent= $sce.trustAsHtml(book.currentPage.colb);
   })
 });
