@@ -11,8 +11,8 @@ app.factory('Book',function($http){
     this.parentID = data.parentID;
     this.jobNum = data.jobNum;
     this.jobNumDot = data.jobNumDot;
-    this.cola = $sce.data.cola;
-    this.colb = $sce.data.colb;
+    this.cola = data.cola;
+    this.colb = data.colb;
     this.colc = data.colc;
     this.cold = data.cold;
     this.cole = data.cole;
