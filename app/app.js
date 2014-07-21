@@ -58,6 +58,11 @@ app.factory('Book',function($http,$sce){
   
 })
 
+app.filter('unsafe', function($sce) {
+    return function(val) {
+        return $sce.trustAsHtml(val);
+    };
+});
 
 app.controller('MainCtrl', function($scope,Book) {
   //$scope.name = 'World';
