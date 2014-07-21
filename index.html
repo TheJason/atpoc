@@ -13,7 +13,7 @@
   <body ng-controller="MainCtrl">
     <select ng-options="page as page.pageNum for page in book.page" ng-model="book.currentPage"></select>
     <h2>{{book.currentPage.page_title}}</h2>
-    <div style="width:48%; float:left" ng-bind-html="leftContent"></div>
-    <div style="width:48%; float:right" ng-bind-html="rightContent"></div>
+    <div style="width:48%; float:left" ng-bind-html-unsafe="book.currentPage.cola"></div>
+    <div style="width:48%; float:right" ng-bind-html-unsafe="book.currentPage.colb"></div>
   </body>
 </html>
