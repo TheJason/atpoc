@@ -1,5 +1,7 @@
 // Angular App JS
-var app = angular.module('atpoc', []);
+var app = angular.module('atpoc', []).config(function($sceProvider) {
+  $sceProvider.enabled(false);
+});
 
 app.factory('Book',function($http){
   
@@ -58,11 +60,17 @@ app.factory('Book',function($http){
   
 })
 
+app.filter('unsafe', function($sce) {
+    return function(val) {
+        return $sce.trustAsHtml(val);
+    };
+});
 
 app.controller('MainCtrl', function($scope,Book) {
   //$scope.name = 'World';
   Book.getBook().then(function(book){
-  $scope.book = book; 
-  
+  $scope.book = book;
+  //$scope.leftContent= $sce.trustAsHtml(book.currentPage.cola);
+  //$scope.rightContent= $sce.trustAsHtml(book.currentPage.colb);
   })
 });
