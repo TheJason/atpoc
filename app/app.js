@@ -48,7 +48,7 @@ app.factory('Book',function($http){
   }
   
   function _getBook(){
-    return $http.get('/json/ms.json').then(function(res){
+    return $http.get('json/ms.json').then(function(res){
       return new Book(res.data);
     })
   }
