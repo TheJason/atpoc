@@ -9,10 +9,11 @@
     <!--<script data-require="angular.js@1.2.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" data-semver="1.2.19"></script>-->
     <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
   </head>
 
   <body ng-swipe-right="prevPage(pageid)" ng-swipe-left="nextPage(pageid)">
-    
+    <ng-include src="includes/header.html"></ng-include>
     <div class="container">
 <div class="starter-template" ui-view></div>
 </div>
