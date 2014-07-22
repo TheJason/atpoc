@@ -84,20 +84,6 @@ app.controller('MainCtrl', function($scope,Book,$stateParams) {
   //$scope.name = 'World';
   Book.getBook().then(function(book){
   $scope.book = book;
-  
-  $scope.pageid = $stateParams.pageID;
-	$scope.nextPage = $stateParams.pageID +1;
-	$scope.prevPage = $stateParams.pageID -1;
-	$scope.nextPage = function(page){
-		var nextPageID = parseInt(page, 10) + 1;
-	    	var url = '/page/' + nextPageID;
-	    	$location.path(url);
-	}
-	$scope.prevPage = function(page){
-		var prevPageID = parseInt(page, 10) - 1;
-	    	var url = '/page/' + prevPageID;
-	    	$location.path(url);
-	}
   //$scope.leftContent= $sce.trustAsHtml(book.currentPage.cola);
   //$scope.rightContent= $sce.trustAsHtml(book.currentPage.colb);
   })
