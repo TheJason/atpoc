@@ -6,8 +6,9 @@
     <title>@Point of Care MS</title>
     <script>document.write('<base href="' + document.location + '" />');</script>
     <!--<link rel="stylesheet" href="style.css" />-->
-    <script data-require="angular.js@1.2.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" data-semver="1.2.19"></script>
-    <script src="app/app.js"></script>
+    <!--<script data-require="angular.js@1.2.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" data-semver="1.2.19"></script>-->
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+
   </head>
 
   <body ng-controller="MainCtrl">
@@ -15,5 +16,18 @@
     <h2>{{book.currentPage.page_title}}</h2>
     <div style="width:48%; float:left" ng-bind-html="book.currentPage.cola | unsafe"></div>
     <div style="width:48%; float:right" ng-bind-html="book.currentPage.colb | unsafe"></div>
+  
+    
+    
+<script></script>
+<script type="text/javascript" src="vendors/underscore/underscore.js"></script>
+<script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+<script type="text/javascript" src="vendors/uiRouter/angular-ui-router.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/controllers.js"></script>
+<script type="text/javascript" src="app/directives.js"></script>
+<script type="text/javascript" src="vendors/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="vendors/bootstrap/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
   </body>
 </html>
