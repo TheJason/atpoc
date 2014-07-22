@@ -1,0 +1,81 @@
+<nav id="navMain" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  		<div class="navbar-header">
+  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#settingsMenu">
+            	<span class="sr-only">Toggle navigation</span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+            </button>
+		    <a id="compass" href="?page=0" class="btn btn-custom col-xs-3 col-md-4">
+		    	<!-- <img src="http://clinician.atpointofcare.com/img/LMeT_ThumbnailsNoStroke_iPad.png"> -->
+			<img src="http://clinician.atpointofcare.com/img/POC2-Home.png" width="40">
+		    </a>
+		    <a href="?page=9999" id="prev" class="btn btn-custom col-xs-3 col-md-4">
+            	<i id="back-arrow" class="fa fa-arrow-circle-o-left fa-3x"></i>
+            </a>
+            <a href="?page=0" id="next" class="btn btn-custom col-xs-3 col-md-4">
+                <i id="frwd-arrow" class="fa fa-arrow-circle-o-right fa-3x"></i>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="settingsMenu">
+            <ul id="searchUl" class="nav navbar-nav">
+	           	<li class="dropdown">
+	           		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	           			<img src="http://clinician.atpointofcare.com/img/LMeT_Settings_NoStroke_iPad.png"> 
+	           			<b class="caret"></b>
+	           		</a>
+		            <ul class="dropdown-menu">
+				    	<li>
+				    		<a href="/book/settings/cmeTracker.cfm" target="_blank" data-toggle="modal" data-target="#cmeTrackerModal" class="btn btn-custom pull-left">
+		            			<img src="img/LMeT_Tracker_NoStroke_iPad.png">
+		            		</a>
+		            		<p class="visible-xs">CME Tracker</p>
+		            	</li>
+				    	<li id="button-cmeinfo" data-toggle="modal" data-target="#cmeModal" style="display: none;">
+				    		<a href="" class="btn btn-custom pull-left">
+		            			<img src="http://clinician.atpointofcare.com/img/LMeT_Info_iPad.png">
+		            		</a>
+		            		<p class="visible-xs">CME Info</p>
+		            	</li>
+		            	<li>
+		            		<a href="#" onclick="window.print();" class="btn btn-custom pull-left">
+		            			<img src="http://clinician.atpointofcare.com/img/LMeT_Print_NoStroke_iPad.png">
+		            		</a>
+		            		<p class="visible-xs">Print</p>
+		            	</li>
+		            	<li>
+		            		<a href="" class="btn btn-custom pull-left">
+		            			<img src="http://clinician.atpointofcare.com/img/LMeT_Settings_NoStroke_iPad.png">
+		            		</a>
+		            		<p class="visible-xs">Settimgs</p>
+		            	</li>
+		            	<li>
+		            		<a href="?page=0" class="btn btn-custom pull-left">
+		            			<img src="http://clinician.atpointofcare.com/img/LMeT_TOC_NoStroke_iPad.png">
+		            		</a>
+		            		<p class="visible-xs">Table of Contents</p>
+		            	</li>
+				<li>
+                                        <a href="#" onclick="logout();" class="btn btn-custom pull-left">
+                                                <img src="http://clinician.atpointofcare.com/img/logout.png">
+                                        </a>
+                                        <p class="visible-xs">Logout</p>
+                                </li>
+				    </ul>
+			    </li>
+		        <li>
+		        	<form class="navbar-form" role="search">
+						<div id="menuSearch" class="form-group">
+							<input type="text" class="form-control" placeholder="Search" name="searchString" id="searchText" onkeyup="openSearch();showSearch();" onfocus="if(this.value == 'Search') {this.value=''}" onblur="if(this.value == ''){this.value ='Search'}">
+							<!--<input name="searchString" id="searchSubmit" value="    " type="button" onClick="showSearch();" onkeypress="showSearch();"> -->
+						</div>
+					</form>
+				</li>
+				<li id="bookMark" style="display: none;">
+					<a href="" class="btn btn-custom pull-left">
+		        		<img src="http://clinician.atpointofcare.com/img/bookmarkRibbonLarge.png">
+		        	</a>
+		        </li>
+        	</ul>
+        </div>
+	</nav>
