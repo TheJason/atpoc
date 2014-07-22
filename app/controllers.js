@@ -3,12 +3,12 @@ function PageDetailController($scope,$http,$location,$stateParams) {
 	$scope.nextPage = $stateParams.pageID +1;
 	$scope.prevPage = $stateParams.pageID -1;
 	$scope.nextPage = function(page){
-		nextPageID = page++;
+		var nextPageID = page + 1;
 	    	var url = '/page/' + nextPageID;
 	    	$location.path(url);
 	}
 	$scope.prevPage = function(page){
-		prevPageID = page - 1;
+		var prevPageID = page - 1;
 	    	var url = '/page/' + prevPageID;
 	    	$location.path(url);
 	}
