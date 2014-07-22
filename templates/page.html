@@ -1,5 +1,6 @@
+<!-- ng-swipe-right="prevPage(pageid)" ng-swipe-left="nextPage(pageid)" -->
 <!--<select ng-options="page as page.pageNum for page in book.page" ng-model="book.currentPage"></select>-->
-<div ng-swipe-right="prevPage(pageid)" ng-swipe-left="nextPage(pageid)">
+<div>
   <div style="width:48%; float:left" ng-bind-html="book.page[pageid].cola | unsafe"></div>
   <div style="width:48%; float:right" ng-bind-html="book.page[pageid].colb | unsafe"></div>
   <br clear="all">  
