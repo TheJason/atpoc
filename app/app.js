@@ -1,6 +1,20 @@
 // Angular App JS
-var app = angular.module('atpoc', []).config(function($sceProvider) {
+var app = angular.module('atpoc', ['ui.router']).config(function($sceProvider,$stateProvider, $urlRouterProvider) {
   $sceProvider.enabled(false);
+  $stateProvider
+      .state('home1', {
+              url: '',
+              templateUrl: 'templates/cover.html'
+            })
+			.state('home', {
+                url: '/home',
+                templateUrl: 'templates/cover.html'
+            })
+            .state('page', {
+                url: '/page/:pageID',
+                templateUrl: 'templates/page.html',
+                //controller: 'ActListController'
+            })
 });
 
 app.factory('Book',function($http){
