@@ -13,7 +13,7 @@ var app = angular.module('atpoc', ['ui.router']).config(function($sceProvider,$s
             .state('page', {
                 url: '/page/:pageID',
                 templateUrl: 'templates/page.html',
-                //controller: 'ActListController'
+                controller: 'PageDetailController'
             })
 });
 
