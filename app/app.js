@@ -1,5 +1,5 @@
 // Angular App JS
-var app = angular.module('atpoc', ['ui.router','ngTouch']).config(function($sceProvider,$stateProvider,$urlRouterProvider) {
+var app = angular.module('atpoc', ['ui.router','ngTouch','ngAnimate']).config(function($sceProvider,$stateProvider,$urlRouterProvider) {
   $sceProvider.enabled(false);
   $stateProvider
       .state('home1', {
