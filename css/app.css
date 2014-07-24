@@ -8124,3 +8124,10 @@ div.modal-footer button {
 .slide.ng-enter.ng-enter-active { } /* terminal animations for enter */
 .slide.ng-leave { }        /* starting animations for leave */
 .slide.ng-leave.ng-leave-active { } /* terminal animations for leave */
+
+.swiper-container, .swiper-slide {
+    width: 200px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+}
