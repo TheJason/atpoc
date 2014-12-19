@@ -6,7 +6,7 @@ We will also be able to easily wrap this as an iOS, Android, Windows, and Kindle
   
 Ultimately providing a single source code for all device apps.
 
+It's important to not that this JSON file contains content for 388-pages of our MS Book, all stored in LocalStorage, making this available offline.
+
 This sample works with swipe, either with touch or mouse swiping.   I am 
 http://thejason.github.io/atpoc/#/page/3 is where the content starts.
-
-All content is being fed into Angular using a single JSON file which is stored in LocalStorage.
